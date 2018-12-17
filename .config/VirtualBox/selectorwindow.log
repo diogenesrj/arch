@@ -1,0 +1,18 @@
+VirtualBox GUI VM Selector Window 5.2.16 r123745 linux.amd64 (Jul 31 2018 19:13:35) release log
+00:00:03.129412 Log opened 2018-08-16T03:44:49.205709000Z
+00:00:03.129414 Build Type: release
+00:00:03.129418 OS Product: Linux
+00:00:03.129420 OS Release: 4.17.14-arch1-1-ARCH
+00:00:03.129422 OS Version: #1 SMP PREEMPT Thu Aug 9 11:56:50 UTC 2018
+00:00:03.129464 DMI Product Name: MPxx
+00:00:03.129485 DMI Product Version: 1.0
+00:00:03.129554 Host RAM: 3821MB (3.7GB) total, 1902MB available
+00:00:03.129559 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:03.129560 Process ID: 26624
+00:00:03.129561 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:03.129608 Qt version: 5.11.1
+00:00:03.282568 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:03.893326 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 5x35 x 1356x696
+00:00:03.947363 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:03.953499 Failed to open "/dev/vboxdrv", errno=13, rc=VERR_VM_DRIVER_NOT_ACCESSIBLE
+00:00:04.990994 GUI: UIInvisibleWindow::sltFallback: Some event haven't came. Screen: 0, work area: 685x35 x 676x696

@@ -1,0 +1,214 @@
+#------------------------------------------------------------------------------------------------------------------------------------------------#
+#                                                                Twm independent hotkeys                                                         #
+#------------------------------------------------------------------------------------------------------------------------------------------------#
+#Lock
+ super + x
+    ./.config/polybar/lock.sh
+
+# terminal emulator
+super + Return
+	st
+
+
+# terminal emulator
+super + shift + Return
+    urdraw
+
+# Firefox
+super + w
+    firefox
+
+# Telegram
+super + a
+    telegram-desktop
+
+# thunar
+super + r
+    thunar
+
+# whatsapp
+super + shift + p
+   whatsie
+
+# kill the currently active window
+ super + k
+   xdotool getwindowfocus windowkill
+
+# program launcher
+super + space
+  rofi -modi run -show run
+
+# make sxhkd reload its configuration files:
+super + Escape
+  pkill -USR1 -x sxhkd; \
+  notify-send -a 'reload' 'Keybindings reloaded'
+
+# screenshot
+
+Print
+   maim -m 10 -f png  -u ~/Imagens/screenshots/$(date +%d-%m-%y_%H:%M:%S).png | notify-send -u low 'Screenshot saved to ~/Imagens'
+
+super + Print
+   maim -s -m 10 -f png  -b 3 -u  ~/Imagens/screenshots/$(date +%d-%m-%y_%H:%M:%S).png | notify-send -u low 'Screenshot saved to ~/Imagens'
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------#
+#                                                                    Bspwm hotkeys                                                                         #
+#----------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+# pare bspwm normalmente
+# quit bspwm normally
+super + alt + Escape
+	bspc quit
+
+# feche e mate
+# close and kill
+super + {_,shift + }w
+	bspc node -{c,k}
+
+# alternar entre o layout de azulejos e monóculo
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# se o nó atual for automático, envie-o para o último manual, caso contrário puxe a última folha
+# if the current node is automatic, send it to the last manual, otherwise pull the last leaf
+super + y
+	bspc query -N -n focused.automatic && bspc node -n last.!automatic || bspc node last.leaf -n focused
+
+# trocar o nó atual e o maior nó
+# swap the current node and the biggest node
+super + g
+	bspc node -s biggest
+
+#
+# state/flags
+#
+
+# definir o estado da janela
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# definir os sinalizadores de nó
+# set the node flags
+super + ctrl + {x,y,z}
+	bspc node -g {locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focar o nó na direção dada
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focar o nó para o caminho dado saltar
+# focus the node for the given path jump
+super + {p,b,comma,@period}
+	bspc node -f @{parent,brother,first,second}
+
+# focar o próximo nó / anterior na área de trabalho atual
+# focus the next/previous node in the current desktop
+super + {_,shift + }c
+	bspc node -f {next,prev}.local
+
+# focar a área de trabalho seguinte / anterior no monitor atual
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focar o último nó / desktop
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+
+# focar o nó mais antigo ou mais recente no histórico de foco
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# concentrar ou enviar para o desktop fornecido
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+#
+# preselect
+#
+
+# pré-selecionar a direção
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# pré-selecionar a relação
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+=
+# cancelar a pré-seleção para o nó focalizado
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancelar a pré-seleção para a área de trabalho focada
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+
+
+#
+# move/resize
+#
+
+# expandir o espaço de mosaico na direção determinada ou redefinir o layout para o padrão
+# expand the tiled space in the given direction or reset layout to default
+super + alt + {h,j,k,l,equal}
+	bspc node {           \
+    @west --ratio -10,  \
+    @south --ratio +10, \
+    @north --ratio -10, \
+    @east --ratio +10,  \
+    @/ --equalize       \
+  }
+
+# contrair o espaço de azulejos na direção dada
+# contract the tiled space in the given direction
+super + alt + shift + {h,j,k,l}
+	bspc node {           \
+    @east --ratio -10,  \
+    @north --ratio +10, \
+    @south --ratio -10, \
+    @west --ratio +10   \
+  }
+
+# mova uma janela flutuante
+# move a floating window
+super + {Left,Down,Up,Right}
+	xdo move {-x -20,-y +20,-y -20,-x +20}
+
+# Rodar a árvore binária no sentido anti-horário / horário
+# Rotate binary tree counter-clockwise/clockwise
+super + ctrl {comma,period}
+  bspc node @/ --rotate {-90,90}
+
+# Circular folhas binárias de árvore para frente / trás
+# circulate binary tree leaves forward/backward
+super + {comma,period}
+  bspc node @/ --circulate {forward,backward}
+
+# inverte a árvore binária (espelho) verticalmente / horizontalmente
+# flip (mirror) binary tree vertically/horizontally
+super + alt {comma,period}
+  bspc node @/ --flip {vertical,horizontal}
+
+# dinamicamente aumentar e diminuir o tamanho do intervalo em um desktop
+# dynamically increase and decrease gap size on a desktop
+super + {minus,plus}
+  bspc config -d focused window_gap "$(( $(bspc config -d focused window_gap) {+,-} 4))"

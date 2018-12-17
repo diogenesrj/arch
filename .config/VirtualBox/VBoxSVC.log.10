@@ -1,0 +1,35 @@
+VirtualBox XPCOM Server 5.2.16 r123745 linux.amd64 (Jul 17 2018 20:13:53) release log
+00:00:00.059774 main     Log opened 2018-07-29T23:17:13.664719000Z
+00:00:00.059776 main     Build Type: release
+00:00:00.059781 main     OS Product: Linux
+00:00:00.059784 main     OS Release: 4.17.10-1-ARCH
+00:00:00.059786 main     OS Version: #1 SMP PREEMPT Wed Jul 25 11:23:00 UTC 2018
+00:00:00.059845 main     DMI Product Name: MPxx
+00:00:00.059867 main     DMI Product Version: 1.0
+00:00:00.059977 main     Host RAM: 3821MB (3.7GB) total, 1594MB available
+00:00:00.059983 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.059984 main     Process ID: 8438
+00:00:00.059985 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.065695 main     IPC socket path: /tmp/.vbox-s373-ipc/ipcd
+00:00:00.238640 nspr-2   VirtualBox: object creation starts
+00:00:00.242611 nspr-2   Home directory: '/home/s373/.config/VirtualBox'
+00:00:00.296502 nspr-2   Loading settings file "/home/s373/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.372971 nspr-2   Successfully initialised host USB using sysfs
+00:00:00.399189 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for g3net2: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.400955 nspr-2   NAT: resolv.conf: nameserver 192.168.0.1
+00:00:00.401018 nspr-2   HostDnsMonitor: old information
+00:00:00.401037 nspr-2     no server entries
+00:00:00.401053 nspr-2     no domain set
+00:00:00.401068 nspr-2     no search string entries
+00:00:00.401083 nspr-2   HostDnsMonitor: new information
+00:00:00.401097 nspr-2     server 1: 192.168.0.1
+00:00:00.401114 nspr-2     no domain set
+00:00:00.401129 nspr-2     no search string entries
+00:00:00.401147 nspr-2   HostDnsMonitorProxy::notify
+00:00:00.453735 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.458561 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={0eb668d2-495e-5a36-8890-29999b5f030c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.591121 nspr-2   Loading settings file "/home/s373/VirtualBox VMs/Whonix-Gateway/Whonix-Gateway.vbox" with version "1.15-linux"
+00:00:00.608334 nspr-2   Loading settings file "/home/s373/VirtualBox VMs/android/android.vbox" with version "1.16-linux"
+00:00:00.637780 nspr-2   VirtualBox: object created
+00:00:09.832446 nspr-2   Saving settings file "/home/s373/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:09.933190 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={4afe423b-43e0-e9d0-82e8-ceb307940dda} aComponent={MediumWrap} aText={The object is not ready}, preserve=false aResultDetail=0

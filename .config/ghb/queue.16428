@@ -1,0 +1,430 @@
+[
+    {
+        "Job": {
+            "Audio": {
+                "AudioList": [
+                    {
+                        "Bitrate": 48,
+                        "CompressionLevel": -1.0,
+                        "DRC": 0.0,
+                        "DitherMethod": "auto",
+                        "Encoder": "av_aac",
+                        "Gain": 0.0,
+                        "Mixdown": "mono",
+                        "NormalizeMixLevel": false,
+                        "PresetEncoder": "av_aac",
+                        "Quality": -3.0,
+                        "Samplerate": 0,
+                        "Track": 0
+                    }
+                ],
+                "CopyMask": [
+                    "copy:aac"
+                ],
+                "FallbackEncoder": "av_aac"
+            },
+            "Destination": {
+                "AlignAVStart": true,
+                "ChapterList": [
+                    {
+                        "Name": ""
+                    }
+                ],
+                "ChapterMarkers": false,
+                "File": "/home/s373/Vídeos/100_4204.m4v",
+                "InlineParameterSets": false,
+                "Mp4Options": {
+                    "IpodAtom": false,
+                    "Mp4Optimize": false
+                },
+                "Mux": "m4v"
+            },
+            "Filters": {
+                "FilterList": [
+                    {
+                        "ID": 3,
+                        "Settings": {
+                            "block-height": "16",
+                            "block-thresh": "40",
+                            "block-width": "16",
+                            "filter-mode": "2",
+                            "mode": "3",
+                            "motion-thresh": "1",
+                            "spatial-metric": "2",
+                            "spatial-thresh": "1"
+                        }
+                    },
+                    {
+                        "ID": 4,
+                        "Settings": {
+                            "mode": "7"
+                        }
+                    },
+                    {
+                        "ID": 6,
+                        "Settings": {
+                            "mode": 2,
+                            "rate": "27000000/900000"
+                        }
+                    },
+                    {
+                        "ID": 11,
+                        "Settings": {
+                            "crop-bottom": 0,
+                            "crop-left": 0,
+                            "crop-right": 0,
+                            "crop-top": 0,
+                            "height": 480,
+                            "width": 640
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "Comment": "EASTMAN KODAK COMPANY  KODAK C122 DIGITAL CAMERA",
+                "Name": "100_4204"
+            },
+            "PAR": {
+                "Den": 1,
+                "Num": 1
+            },
+            "SequenceID": 0,
+            "Source": {
+                "Angle": 0,
+                "Path": "/run/media/s373/0004-9AD9/DCIM/100KC122/100_4204.MOV",
+                "Range": {
+                    "End": 1,
+                    "Start": 1,
+                    "Type": "chapter"
+                },
+                "Title": 1
+            },
+            "Subtitle": {
+                "Search": {
+                    "Burn": true,
+                    "Default": false,
+                    "Enable": false,
+                    "Forced": false
+                },
+                "SubtitleList": []
+            },
+            "Video": {
+                "ColorMatrixCode": 0,
+                "Encoder": "x264",
+                "Level": "3.1",
+                "Options": "",
+                "Preset": "fast",
+                "Profile": "main",
+                "QSV": {
+                    "AsyncDepth": 4,
+                    "Decode": false
+                },
+                "Quality": 21.0,
+                "Tune": "",
+                "Turbo": false,
+                "TwoPass": false
+            }
+        },
+        "Title": {
+            "AngleCount": 1,
+            "AudioList": [
+                {
+                    "Attributes": {
+                        "AltCommentary": false,
+                        "Commentary": false,
+                        "Default": true,
+                        "Normal": false,
+                        "Secondary": false,
+                        "VisuallyImpaired": false
+                    },
+                    "BitRate": 64000,
+                    "ChannelCount": 1,
+                    "ChannelLayout": 4,
+                    "ChannelLayoutName": "mono",
+                    "Codec": 131072,
+                    "CodecName": "pcm_mulaw",
+                    "Description": "English (pcm_mulaw) (1.0 ch)",
+                    "LFECount": 0,
+                    "Language": "English",
+                    "LanguageCode": "eng",
+                    "SampleRate": 8000
+                }
+            ],
+            "ChapterList": [
+                {
+                    "Duration": {
+                        "Hours": 0,
+                        "Minutes": 1,
+                        "Seconds": 21,
+                        "Ticks": 7323137
+                    },
+                    "Name": ""
+                }
+            ],
+            "Color": {
+                "Matrix": 6,
+                "Primary": 6,
+                "Transfer": 1
+            },
+            "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+            "Crop": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "Duration": {
+                "Hours": 0,
+                "Minutes": 1,
+                "Seconds": 21,
+                "Ticks": 7323137
+            },
+            "FrameRate": {
+                "Den": 909706,
+                "Num": 27000000
+            },
+            "Geometry": {
+                "Height": 480,
+                "PAR": {
+                    "Den": 1,
+                    "Num": 1
+                },
+                "Width": 640
+            },
+            "Index": 1,
+            "InterlaceDetected": false,
+            "Metadata": {
+                "Comment": "EASTMAN KODAK COMPANY  KODAK C122 DIGITAL CAMERA"
+            },
+            "Name": "100_4204",
+            "Path": "/run/media/s373/0004-9AD9/DCIM/100KC122/100_4204.MOV",
+            "Playlist": -1,
+            "SubtitleList": [],
+            "Type": 3,
+            "VideoCodec": "mjpeg"
+        },
+        "uiSettings": {
+            "AlignAVStart": true,
+            "AudioAllowAACPass": true,
+            "AudioAllowAC3Pass": false,
+            "AudioAllowDTSHDPass": false,
+            "AudioAllowDTSPass": false,
+            "AudioAllowEAC3Pass": false,
+            "AudioAllowFLACPass": false,
+            "AudioAllowMP3Pass": false,
+            "AudioAllowTRUEHDPass": false,
+            "AudioBitrate": "192",
+            "AudioCopyMask": [
+                "copy:aac"
+            ],
+            "AudioEncoder": "copy:ac3",
+            "AudioEncoderFallback": "av_aac",
+            "AudioLanguageList": [],
+            "AudioList": [
+                {
+                    "AudioBitrate": 160,
+                    "AudioCompressionLevel": -1.0,
+                    "AudioDitherMethod": "auto",
+                    "AudioEncoder": "av_aac",
+                    "AudioMixdown": "dpl2",
+                    "AudioNormalizeMixLevel": false,
+                    "AudioSamplerate": "auto",
+                    "AudioTrackDRCSlider": 0.0,
+                    "AudioTrackGainSlider": 0.0,
+                    "AudioTrackQuality": 1.0,
+                    "AudioTrackQualityEnable": false
+                }
+            ],
+            "AudioMixdown": "dpl2",
+            "AudioSamplerate": "auto",
+            "AudioSecondaryEncoderMode": true,
+            "AudioTrack": "0",
+            "AudioTrackDRCSlider": 0.90000000000000002,
+            "AudioTrackDRCValue": "Off",
+            "AudioTrackGainSlider": 0.0,
+            "AudioTrackName": "",
+            "AudioTrackQuality": -1.0,
+            "AudioTrackQualityEnable": false,
+            "AudioTrackQualityValue": "-3",
+            "AudioTrackQualityX": -3.0,
+            "AudioTrackSelectionBehavior": "first",
+            "ChapterMarkers": true,
+            "ChildrenArray": [],
+            "Default": false,
+            "FileFormat": "av_mp4",
+            "Folder": false,
+            "FolderOpen": false,
+            "InlineParameterSets": false,
+            "MetaAlbumArtist": "",
+            "MetaArtist": "",
+            "MetaComment": "EASTMAN KODAK COMPANY  KODAK C122 DIGITAL CAMERA",
+            "MetaDescription": "",
+            "MetaGenre": "",
+            "MetaLongDescription": "",
+            "MetaName": "100_4204",
+            "MetaReleaseDate": "",
+            "Mp4HttpOptimize": false,
+            "Mp4iPodCompatible": false,
+            "PictureAutoCrop": true,
+            "PictureBottomCrop": 0.0,
+            "PictureCombDetectCustom": "",
+            "PictureCombDetectPreset": "default",
+            "PictureDARWidth": 0,
+            "PictureDeblock": 4,
+            "PictureDeblockCustom": "qp=0:mode=2",
+            "PictureDeinterlaceCustom": "",
+            "PictureDeinterlaceDecomb": false,
+            "PictureDeinterlaceFilter": "decomb",
+            "PictureDeinterlacePreset": "default",
+            "PictureDenoiseCustom": "",
+            "PictureDenoiseFilter": "off",
+            "PictureDenoisePreset": "",
+            "PictureDenoiseTune": "none",
+            "PictureDetelecine": "off",
+            "PictureDetelecineCustom": "",
+            "PictureDisplayHeight": 480.0,
+            "PictureDisplayWidth": 640.0,
+            "PictureForceHeight": 0,
+            "PictureForceWidth": 0,
+            "PictureHeight": 720.0,
+            "PictureHeightEnable": true,
+            "PictureItuPAR": false,
+            "PictureKeepRatio": true,
+            "PictureLeftCrop": 0.0,
+            "PictureLooseCrop": false,
+            "PictureModulus": "2",
+            "PicturePAR": "auto",
+            "PicturePARHeight": 1.0,
+            "PicturePARWidth": 1.0,
+            "PictureRightCrop": 0.0,
+            "PictureRotate": "disable=1",
+            "PictureSharpenCustom": "",
+            "PictureSharpenFilter": "off",
+            "PictureSharpenPreset": "",
+            "PictureSharpenTune": "",
+            "PictureTopCrop": 0.0,
+            "PictureWidth": 1280.0,
+            "PictureWidthEnable": true,
+            "Preferences": {
+                "AddCC": false,
+                "AutoScan": false,
+                "DiskFreeCheck": true,
+                "DiskFreeLimit": 10000.0,
+                "EncodeLogLocation": false,
+                "ExportDirectory": "/home/s373/Desktop",
+                "HideAdvancedVideoSettings": true,
+                "LogLongevity": "immortal",
+                "LoggingLevel": "1",
+                "MinTitleDuration": 10.0,
+                "PreferredLanguage": "und",
+                "RemoveFinishedJobs": false,
+                "SrtDir": "/home/s373/Vídeos",
+                "SyncTitleSettings": true,
+                "UseM4v": true,
+                "VideoQualityGranularity": "1",
+                "WhenComplete": "notify",
+                "allow_tweaks": false,
+                "auto_name": true,
+                "auto_name_template": "{source}",
+                "check_updates": "weekly",
+                "default_source": "/dev/dvd",
+                "destination_dir": "/home/s373/Vídeos",
+                "hbfd": false,
+                "hbfd_feature": false,
+                "last_update_check": 0,
+                "live_duration": 15.0,
+                "preset_window_height": 1,
+                "preset_window_width": 1,
+                "presets_window_height": 600,
+                "presets_window_width": 300,
+                "preview_count": 10.0,
+                "preview_show_crop": false,
+                "preview_x": -1,
+                "preview_y": -1,
+                "reduce_hd_preview": true,
+                "show_presets": true,
+                "update_skip_version": 0,
+                "use_dvdnav": true,
+                "version": "0.1",
+                "window_height": 696,
+                "window_width": 675
+            },
+            "PreferredLanguage": "und",
+            "PresetCategory": "new",
+            "PresetDescription": "H.264 video (up to 720p30) and AAC stereo audio, in an MP4 container.",
+            "PresetFullName": "/General/Fast 720p30",
+            "PresetName": "Fast 720p30",
+            "PtoPType": "chapter",
+            "SrtCodeset": "ISO-8859-1",
+            "SrtFile": null,
+            "SrtLanguage": "und",
+            "SrtOffset": 0.0,
+            "SubtitleAddCC": false,
+            "SubtitleAddForeignAudioSearch": true,
+            "SubtitleAddForeignAudioSubtitle": false,
+            "SubtitleBurnBDSub": true,
+            "SubtitleBurnBehavior": "foreign",
+            "SubtitleBurnDVDSub": true,
+            "SubtitleLanguageList": [],
+            "SubtitleTrackSelectionBehavior": "none",
+            "Type": 0,
+            "UsesPictureFilters": true,
+            "UsesPictureSettings": 1,
+            "VideoAvgBitrate": 3000.0,
+            "VideoColorMatrixCode": 0,
+            "VideoEncoder": "x264",
+            "VideoFramerate": "30",
+            "VideoFramerateCFR": false,
+            "VideoFramerateMode": "pfr",
+            "VideoFrameratePFR": true,
+            "VideoFramerateVFR": false,
+            "VideoGrayScale": false,
+            "VideoLevel": "3.1",
+            "VideoOptionExtra": "",
+            "VideoPreset": "fast",
+            "VideoPresetSlider": 4,
+            "VideoProfile": "main",
+            "VideoQSVAsyncDepth": 4,
+            "VideoQSVDecode": false,
+            "VideoQualitySlider": 21,
+            "VideoQualityType": 2,
+            "VideoScaler": "swscale",
+            "VideoTune": "none",
+            "VideoTurboTwoPass": true,
+            "VideoTwoPass": true,
+            "activity_location": "/home/s373/.config/ghb/Activity.log.16428",
+            "angle": 1.0,
+            "angle_count": 1,
+            "autoscale": false,
+            "chapter_list": [],
+            "dest_dir": "/home/s373/Vídeos",
+            "dest_file": "100_4204.m4v",
+            "destination": "/home/s373/Vídeos/100_4204.m4v",
+            "display_aspect": "4:3",
+            "end_point": 1.0,
+            "job_status": 0,
+            "job_unique_id": 0,
+            "preset_modified": false,
+            "preset_reload": false,
+            "preview_frame": 2,
+            "scale_height": 480.0,
+            "scale_width": 640.0,
+            "single_title": 1.0,
+            "source": "/run/media/s373/0004-9AD9/DCIM/100KC122/100_4204.MOV",
+            "source_height": 480,
+            "source_label": "100_4204",
+            "source_width": 640,
+            "start_frame": -1,
+            "start_point": 1.0,
+            "title": "1",
+            "title_selected": false,
+            "volume": "100_4204",
+            "vquality_type_bitrate": false,
+            "vquality_type_constant": true,
+            "x264FastDecode": false,
+            "x264Option": "level=3.1:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=14000:vbv-maxrate=14000:rc-lookahead=30",
+            "x264UseAdvancedOptions": false,
+            "x264ZeroLatency": false
+        }
+    }
+]
