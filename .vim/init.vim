@@ -1,0 +1,1 @@
+/home/s373/.vimrc

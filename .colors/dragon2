@@ -1,0 +1,25 @@
+! Special
+*background:      #322B38
+*foreground:      #7E38B8
+*.cursorColor:    #322B38
+
+!black
+color1:           #1F2C35
+!color6:		  #EFBC73
+
+!green
+color2:           #547E9B
+
+!marron
+color3:           #4A391F
+
+!blue
+color4:		#4EA17A
+!color5:		#7E38B8
+
+fgSelect
+rofi.color-normal: argb:00000000, #363a38, argb:00000000, #151515,#7d8283
+rofi.color-urgent: argb:00000000, #00ff00, argb:00000000, #151515,#fae1ee
+rofi.color-active: argb:00000000, #0000ff, argb:00000000, #151515,#caf0ec
+!                          bg      border 
+rofi.color-window: argb:ff101010, #010101, #7E38B8
